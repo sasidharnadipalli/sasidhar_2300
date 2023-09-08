@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+
+    <style>
+        .c1{
+            text-align: left;
+        }
+
+        .c2{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <center>
+            <br><br><br><br><br><br><br><br><br>
+            <table border = "1" cellspacing = "0" >
+                <tr><th><label for = "fn">First Name</label></th><th><input type = "text" name = "fn" size = 40/></th></tr>
+                <tr><th><label for = "ln">Last Name</label></th><th><input type = "text" name = "ln" size = 40/></th></tr>
+                <tr><th><label for = "em">email</label></th><th><input type = "email" name = "em" size = 40/></th></tr>
+                <tr><th><label for="Password">Password</label></th><th><input type="Password" name="Password" size = 40/></th></tr>
+                <tr><th><label for="Re Password">Re-enter Password</label></th><th><input type="Password" name="Re Password" size = 40/></th></tr>
+                <tr>
+                    <th rowspan = "2">
+                        <label>Gender:</label>
+                    </th>
+                    <td class = "c1">
+                        <input type="radio" name = "gender" />Male
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class = "c1">
+                        <input type="radio" name = "gender"/>Female
+                    </td>
+                </tr>
+
+                <tr><th><label for="Age">Age:</label></th><th><input type="tel" name="Age" maxlength="3" size = 40/></th></tr>
+                <tr><th><label for="number">Phone Number</label></th><th><input type="tel" name="number" maxlength="10" size = 40/></th></tr>
+                <tr><th><label for="Address">Address</label></th><th><textarea cols = 38></textarea></th></tr>
+                <tr><th><label for = "state">State</label></th><th><input type = "text" name = "state" size = 40/></th></tr>
+                <tr>
+                    <th>
+                        <label>Country</label>
+                    </th>
+                    <td>
+                        <select required>
+                       
+                            <option>Choose your country</option>
+                            <option>India</option>
+                            <option>Australia</option>
+                            <option>China</option>
+                            <option>Other</option>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label>Languages known</label>
+                    </th>
+                    <td>
+                        <input type = "checkbox" />English
+                        <input type = "checkbox" />Kannada
+                        <input type = "checkbox" />Hindi
+                        <input type = "checkbox" />Telugu
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                    <input type = "checkbox" />Hereby I declare all the given details are true 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan = "2" class = "c2">
+                        Login to <a href = "https://ethnus.com/">Ethnus</a> website
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+
+            <input type = "submit" value = "Register" />
+
+
+        </center>
+    </form>
+    
+</body>
+</html>
